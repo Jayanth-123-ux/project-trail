@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General Styles */
+        #div13 {
+            padding: 20px;
+        }
+
+        .div15 { 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            /* Allow items to wrap on smaller screens */
+        }
+
+        .div14 {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .div16 {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .div14 h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .div14 p {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .div17 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input1 {
+            width: 100%;
+            /* Full width for inputs */
+            height: 50px;
+            padding-left: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .input1[type="text"],
+        .input1[type="email"] {
+            width: 100%;
+            /* Make input fields responsive */
+        }
+
+        .input1[type="textarea"] {
+            width: 100%;
+            height: 150px;
+        }
+
+        /* Send Message button */
+        .a01 {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .a01:hover {
+            background-color: #0056b3;
+        }
+
+        /* For small screens (phones) */
+        @media (max-width: 576px) {
+            .div14 h2 {
+                font-size: 24px;
+                /* Smaller header on phones */
+            }
+
+            .div14 p {
+                font-size: 18px;
+                /* Smaller paragraph text on phones */
+            }
+
+            .div15 {
+                flex-direction: column;
+                /* Stack items vertically */
+                align-items: center;
+                text-align: center;
+            }
+
+            .div16 {
+                width: 100%;
+                /* Make image take full width on phones */
+                margin-bottom: 20px;
+            }
+
+            .input1 {
+                width: 90%;
+                /* Reduce width of inputs */
+            }
+
+            .a01 {
+                font-size: 14px;
+                /* Smaller font size for the button */
+                padding: 10px 20px;
+                /* Adjust padding for smaller screens */
+            }
+        }
+
+        /* For medium screens (tablets) */
+        @media (min-width: 577px) and (max-width: 992px) {
+            .div15 {
+                flex-direction: row;
+                /* Keep items side by side but allow some wrapping */
+                justify-content: space-between;
+            }
+
+            .div14 h2 {
+                font-size: 28px;
+                /* Slightly smaller header for tablets */
+            }
+
+            .div14 p {
+                font-size: 20px;
+                /* Slightly smaller paragraph text for tablets */
+            }
+
+            .div16 img {
+                width: 100%;
+                /* Make image responsive for tablets */
+                height: auto;
+                /* Maintain aspect ratio */
+            }
+
+            .input1 {
+                width: 90%;
+                /* Adjust input width for tablets */
+            }
+
+            .a01 {
+                font-size: 15px;
+                /* Adjust button size for tablets */
+                padding: 12px 25px;
+            }
+        }
+
+        /* For large screens (desktops) */
+        @media (min-width: 993px) {
+            .div15 {
+                flex-direction: row;
+                /* Keep items side by side */
+                justify-content: space-between;
+            }
+
+            .div14 h2 {
+                font-size: 32px;
+                /* Larger header for desktops */
+            }
+
+            .div14 p {
+                font-size: 22px;
+                /* Larger paragraph text for desktops */
+            }
+
+            .div16 img {
+                width: 450px;
+                /* Fixed size for image */
+                height: 462px;
+            }
+
+            .input1 {
+                width: 500px;
+                /* Fixed input width for desktops */
+            }
+
+            .a01 {
+                font-size: 16px;
+                /* Standard button size for desktops */
+                padding: 14px 30px;
+            }
+        }
+
+        /* For extra-large screens (larger desktops) */
+        @media (min-width: 1200px) {
+            .div15 {
+                justify-content: space-between;
+                /* Ensure layout remains intact on large screens */
+            }
+
+            .div14 h2 {
+                font-size: 36px;
+                /* Larger header for extra-large screens */
+            }
+
+            .div14 p {
+                font-size: 24px;
+                /* Larger paragraph text for extra-large screens */
+            }
+
+            .div16 img {
+                width: 500px;
+                /* Adjust image size for larger screens */
+                height: 500px;
+            }
+
+            .input1 {
+                width: 500px;
+                /* Fixed input width for extra-large screens */
+            }
+
+            .a01 {
+                font-size: 18px;
+                /* Larger button for extra-large screens */
+                padding: 16px 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div13">
+        <div class="div15">
+            <div class="div14">
+                <h2>Contact Us</h2>
+                <p style="font-size: 22px;">We Love Conversations.Lets Take</p>
+                <div class="div17">
+                    <form action="">
+                        <input class="focussing" type="text" placeholder="Enter Full Name"
+                            style="width: 500px; height: 50px; padding-left: 5px; border-radius: 5px;"
+                            class="input1"><br><br>
+                        <input class="focussing" type="email" placeholder="Enter email address"
+                            style="width: 500px; height: 50px; padding-left: 5px; border-radius: 5px;"
+                            class="input1"><br><br>
+                        <input class="focussing" type="text" placeholder="Tell us about your Message"
+                            style="width: 500px; height: 200px; border-radius: 5px; padding-top: 0;"
+                            class="input1"><br><br><br>
+                        <a href="" class="a01">Send Message</a>
+                    </form>
+                </div>
+            </div>
+            <div class="div16">
+                <img src="./contact-image.jpg" alt="" width="450px" height="462.37px">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

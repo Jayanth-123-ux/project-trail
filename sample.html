@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General Carousel Styles */
+.carousel-caption {
+    position: absolute;
+    bottom: 20px; /* Adjust to place the caption at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white; /* Adjust text color */
+    padding: 15px;
+    z-index: 10;
+}
+
+/* For small screens (phones) */
+@media (max-width: 576px) {
+    .carousel-caption h1 {
+        font-size: 1.5rem; /* Smaller heading for mobile */
+        line-height: 1.2;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1rem; /* Smaller subheading for mobile */
+        line-height: 1.4;
+    }
+
+    .button1 a {
+        padding: 8px 12px; /* Adjust button size for small screens */
+        font-size: 0.9rem;
+    }
+
+    .carousel-item img {
+        height: auto; /* Ensure image doesn’t stretch */
+    }
+
+    .carousel-caption {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 577px) and (max-width: 992px) {
+    .carousel-caption h1 {
+        font-size: 2rem; /* Medium heading for tablets */
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2rem; /* Medium subheading */
+    }
+
+    .button1 a {
+        padding: 10px 15px; /* Adjust button size for tablets */
+        font-size: 1rem;
+    }
+
+    .carousel-inner img {
+        object-fit: cover; /* Ensure images look good on tablets */
+    }
+
+    .carousel-caption {
+        padding: 20px; /* Increase padding for tablets */
+    }
+}
+
+/* For large screens (desktops) */
+@media (min-width: 993px) {
+    .carousel-caption h1 {
+        font-size: 3rem; /* Larger heading for desktop */
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.5rem; /* Larger subheading */
+    }
+
+    .button1 a {
+        padding: 12px 20px; /* Larger button for desktops */
+        font-size: 1.1rem;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 40px; /* Larger control icons for desktops */
+        height: 40px;
+    }
+}
+
+/* For extra-large screens (larger desktops) */
+@media (min-width: 1200px) {
+    .carousel-caption h1 {
+        font-size: 4rem; /* Extra large heading for larger screens */
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.8rem; /* Extra large subheading */
+    }
+
+    .button1 a {
+        padding: 15px 25px; /* Extra large button */
+        font-size: 1.2rem;
+    }
+
+    /* Optional: Add more space around caption for extra-large screens */
+    .carousel-caption {
+        padding: 25px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div id="carouselExampleCaptions" class="carousel slide class">
+        <div class="carousel-indicators" style="z-index: -1;">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="z-index: -1;">
+            <div class="carousel-item active">
+                <img src="./slider-image1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block" class="class2">
+                    <h1 class="h1">Distance learning<br> Education Center</h1>
+                    <h5 class="h5">Our online courses are designed to fit in your industry supporting all-round with
+                        latest technologies.</h5>
+                    <button class="button1"><a href="" class="section-btn btn btn-default smoothScroll">Discover
+                            more</a></button>
+                </div>
+            </div>
+            <div class="carousel-item" style="z-index: -1;">
+                <img src="./slider-image2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="h12">Start Your Journey With Our Practical Courses</h1>
+                    <h5 class="h51">Our online courses are built in partnership with technology leaders and are designed
+                        to meet industry demands. </h5>
+                    <button class="button1"><a href="" class="section-btn btn btn-default smoothScroll">Take a
+                            Course</a></button>
+                </div>
+            </div>
+            <div class="carousel-item" style="z-index: -1;">
+                <img src="./slider-image3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="h13">Effective Learning Methods</h1>
+                    <h5 class="h52">Nam eget sapien vel nibh euismod vulputate in vel nibh. Quisque eu ex eu urna
+                        venenatis sollicitudin ut at libero. Visit </h5>
+                    <button class="button1"><a href="" class="section-btn btn btn-default smoothScroll">Lets
+                            Chat</a></button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>       
+    <!----------------------------------------------------------------------------------------------------  -->
+    <div class="div03">
+        <h3 style="padding-bottom: 10px; color: white; border: 5px solid red;">Sign up</h3>
+        <form action="">
+            <input type="text" placeholder="Full Name" class="focus1"><br>
+            <hr>
+            <input type="text" placeholder="Email Address" class="focus1"><br>
+            <hr>
+            <input type="text" placeholder="Password" class="focus1"><br>
+            <hr>
+            <a href="" class="a1">Get Started</a>
+        </form>
+    </div>
+</body>
+</html>
